@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/mainPage.css">
+        <link rel="stylesheet" href="css/additionalPage2.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.37" />
+  
+        <title>1Lab</title>
+        
+    </head>
+    <body>
+       
+        <div id="page">
+            <div id="header">
+                <table width=70%, height=100%, align="center" style="margin-top: 10px">
+                   <tr >
+                        <td rowspan="2", width=9%, valign="middle", align="right" >
+                            <div style="background-color: rgb(155,155,155); width: 70px; height: 70px; margin-bottom: 20px;">
+                             <img src="https://gcdnb.pbrd.co/images/t9pSuSRnjmgW.png?o=1" height="70px" width="70px">
+                            </div>
+                        </td>
+                        <td valign="bottom" ><div class="sansBold2" style="width:300px "; >Назва Компанії</div></td>
+                        <td align="right", valign="bottom"><div class="sansRegularBig">+380992310086</div></td>
+                    </tr>
+                    <tr >
+                        <td width=25% valign="top" ><div class="sansRegular3" >найкраща на світі компанія</div></td>
+                        <td align="right",valign="bottom"><div class="sansRegularBig" style="padding-bottom: 0px;">+380880553535</div></td>
+                      
+                    </tr>
+                    <tr >
+                        <td></td>
+                        <td></td>
+                        <td align="right" ><div ><p  class="feedback" onclick="popupFeedbackShow()">Зворотній зв'язок</p>
+                            <div class="feedbackPopup" id="popupFeedback">
+                                <div style="margin: 5px 5px 0px 0px;" id="closeButton">
+                                    <button onclick="popupFeedbackHide()" style="height: 25px; width: 25px; background-color: rgb(179, 37, 37);  cursor: pointer;">X</button>
+                                </div>
+                              <div class="sansBold3" style="font-size: 25px; margin: 2px 75px 0 0px; color: #615B5B;">Зворотній зв'язок</div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 10px 150px 0 0px; color: #615B5B;" > Ваше ім'я <span style="color:red">*</span></div>
+                              <div style="margin: 5px 55px 0 0px;"> <input type="text" id="name" name="fname" placeholder="Jonh" type='text' ><br><br></div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 10px 150px 0 0px; color: #615B5B;" > Телефон <span style="color:red">*</span></div>
+                              <div style="margin: 5px 55px 0 0px;"> <input type="number" id="phone-number" name="fname" placeholder="12345678" type='text' ><br><br></div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 10px 160px 0 0px; color: #615B5B;" > Email <span style="color:red">*</span></div>
+                              <div style="margin: 5px 55px 0 0px;"> <input type="email" id="email" name="fname" type='text' placeholder="info@gmail.com" ><br><br></div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 0px 130px 0 0px; color: #615B5B;" > Повідомлення <span style="color:red" type='text'></span></div>
+                              <div style=" margin: 5px 55px 0 0px;">
+                                <form >
+                                    <textarea rows="4" cols="30" style="resize: none;" placeholder="Thank you. Good day!" ></textarea>
+                                    <br>
+                                    
+                                    </form>
+                              </div>
+                              
+                              <div style="margin: 20px 135px 0 0px;">
+                                <button id="feedbackButton" style="height: 35px; width: 100px; " type="button" onclick="checkTextFields()"><span>Надіслати</span> </button>
+                              </div>
+                              <div id="error" style="color: red; margin-top: 5px; margin-right: 34px; display: inline;  font-family: 'PT Sans', sans-serif;" ></div>
+                            </div>
+                        </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="menu">
+                <table width=70%, height=100%, align="center">
+                    <ul class="menuList" >
+                        <li><div class="sansRegular2" ><a href style="color:#ffffff; text-decoration: none; border-bottom: 2px solid white;">Головна</a></div></li>
+                        <li><div class="sansRegular2"  ><a href="mainPage.html" style="color:#ffffff; text-decoration: none;"> Каталог</a></div></li> 
+                        <li><div class="sansRegular2"><a href="additionalPage1.html" style="color:#ffffff; text-decoration: none;  ">Доставка та оплата</a></div></li> 
+                        <li><div class="sansRegular2"><a href="additionalPage1.html" style="color:#ffffff; text-decoration: none;">Прайс-лист</a></div></li>
+                        <li><div class="sansRegular2"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" style="color:#ffffff; text-decoration: none;">Контакти</a></div></li>
+                    </ul>
+                </table>
+            </div>
+            <div id="slider" style="margin-top: 5px;">
+                    <div id="sliderImg">
+                    </div>
+                    <button type="button" onclick = previouslyImage(); style="top:40%; left: 20%;"> < </button>
+                    <button type="button" onclick = nextImage(); style="top:40%; left: 80%;"> ></button>
+            </div>
+            <div id="content">
+                <div class="contentContainer">
+                    <div id="contentLeft">
+                        <span style="position: absolute; top: 10px; font-size: 35px; margin-left: 30px; font-weight: 700; ">Новини</span>
+                        <ul style="width:250px ;list-style: none; margin-top: 70px; margin-left: 30px; padding: 0;">
+                            <li><i>14 вересня 2013 р.</i></li>
+                            <li>Редизайн веб-сайту архітектурного бюро.</li>
+                        </ul>
+                        <ul style="width:250px ;list-style: none; margin-top: 30px; margin-left: 30px; padding: 0;">
+                            <li><i>14 вересня 2013 р.</i></li>
+                            <li>Розкрутка Інтернет-магазину декоративних стікерів та вінілових наклейок.</li>
+                        </ul>
+                        <ul style="width:250px ;list-style: none; margin-top: 30px; margin-left: 30px; padding: 0;">
+                            <li><i>14 вересня 2013 р.</i></li>
+                            <li>SEO-просуваня сайту постачальника дизель генераторів.</li>
+                        </ul>
+                        <ul style="width:250px ;list-style: none; margin-top: 30px; margin-left: 30px; padding: 0;">
+                            <li><i>14 вересня 2013 р.</i></li>
+                            <li>Пошукове просування веб-сайту постачальника гідроустаткування.</li>
+                        </ul>
+                      <a href style="color:#ffffff; position: absolute; margin-left: 220px;top: 425px; font-size: 15px;">Архів новин</a>
+                    </div>
+                    <div id="contentRight">
+                        <span style="position: absolute; top: 10px; font-size: 35px; margin-left: 30px; font-weight: 700; ">Компанія "Назва Компанії"</span>
+                        <div style="margin-top: 70px;">"Назва Компанії" - це компанія з Києва, що займається професійною розробкою сайтів. 
+                            Ми вже працюємо на ринку веб-розробки протягом 5 років і маємо великий досвід у створенні веб-сайтів різної складності для наших клієнтів.</div>
+                            <div>Наша компанія надає повний спектр послуг, пов'язаних з веб-розробкою. 
+                                Ми можемо допомогти вам з дизайном та розробкою веб-сайту, SEO-оптимізацією, адаптивним дизайном та розробкою мобільних додатків.</div>
+                            <div>Ми маємо багато задоволених клієнтів у різних галузях, включаючи малі бізнеси, стартапи та середні підприємства. 
+                                Наші послуги допомогають нашим клієнтам зростати та розвиватися в онлайн-середовищі.</div>
+                            <div>
+                                Наша команда має значний досвід та знання в галузі веб-розробки. 
+                                Ми завжди стежимо за новітніми тенденціями та використовуємо новітні технології 
+                                для створення максимально ефективних та привабливих веб-сайтів для наших клієнтів.
+                            </div>
+                            <div>
+                                Ми розуміємо, що кожен бізнес є унікальним та має свої власні потреби. 
+                                Тому ми завжди працюємо із задоволенням над індивідуальними проєктами та надаємо рішення, які найкраще відповідають потребам кожного нашого клієнта.
+                            </div>
+                            <div>
+                                Якщо ви шукаєте професійних веб-розробників, які допоможуть вам зробити ваш сайт максимально ефективним 
+                                та привабливим для вашої аудиторії, звертайтеся до нас - "Назва Компанії"!
+                            </div>
+                    </div>
+
+                </div>
+                  
+               
+            </div>  
+           
+            <div id="footer">
+                <table width=75% height=100% align="center">
+                    <tr>
+                        <td width=30%><div class="sansRegular3" style="color:#ffffff;">&copy; Компанія "Company Name"<br>info@name.ua</div></td>
+                        <td width=45%>
+                            <ul><div class="sansRegular3">
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href style="color:#ffffff;">Головна</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="mainPage.html" style="color:#ffffff;">Каталог</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="additionalPage1.html" style="color:#ffffff;">Доставка та оплата</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="additionalPage1.html" style="color:#ffffff;">Прайс-лист</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" style="color:#ffffff;">Контакти</a></u></li>
+                            </div></ul>
+                        </td>
+                        <td width=5%>
+                            <img src="https://gcdnb.pbrd.co/images/t9pSuSRnjmgW.png?o=1" height="70px" width="70px"
+                        </td>
+                        <td  style="vertical-align: middle;"><div class="sansRegular4"><a style="color:#ffffff;"><u>Розробка сайта</u> —</a></div></div><div class="sansRegular3" style="color:#ffffff;">Пшоновський Євгеній ІПС-21</div></td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+        <script src="js/FeedbackMenu.js"></script>
+        <script src="js/sliderImgSwitch.js"></script>
+    </body>
+</html>

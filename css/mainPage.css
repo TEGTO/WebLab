@@ -1,0 +1,426 @@
+
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+body {
+    overflow-x:hidden; 
+ 
+  }
+
+ 
+  
+@media (max-width:1000px)
+{
+    
+    #rightCentralText .lowerNumbersFlex
+    {
+        margin: 20px 0 0 100px !important;
+    }
+    ul.menuList li 
+    {
+        margin-right: 0 !important;
+        padding: 0 !important;
+        min-width: 134px !important;
+    }
+    #rightCentralLowerText
+    {
+      width:700px !important;
+    }
+}
+@media (max-width:1250px)
+{
+    #content
+    {
+       
+        right:250px;
+    }
+    ul.menuList li 
+    {
+        min-width: 134px !important;
+     
+      
+    }
+    #rightCentralLowerText
+    {
+       margin-right: 100px !important;
+    }
+    
+}
+@media (max-width:1390px)
+{
+    #rightCentralLowerText
+    {
+       margin-right: 120px !important;
+    }
+}
+@media (max-width:1900px)
+{
+    ul.menuList li 
+    {
+        margin-right: 0 !important;
+     
+      
+    }
+}
+@media (min-width:2300px)
+{
+    #content
+    {
+        margin-left:15%;
+    }
+
+}
+@media (min-width:2750px)
+{
+    #content
+    {
+        margin-left:20%;
+    }
+
+}
+@media (min-width:4500px)
+{
+    #content
+    {
+        margin-left:30%;
+    }
+   
+}
+
+
+#page {
+	position: absolute;
+    padding-bottom: 0px;
+    background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+    overflow-x:hidden; 
+    overflow-y: hidden;
+    min-height: 1850px;
+}
+#right {
+    position: absolute;
+    height: auto;
+    width: 10%;
+    right: 0;
+    top: 0;
+}
+#header {
+    position: absolute;
+    background-color: rgb(220,220,220);
+    height: 150px;
+    width: 100%;
+    top: 0;
+ 
+}
+#menu {
+    position: absolute;
+    background-color: #1a232a;
+    height: 70px;
+    width: 100%;
+    top: 150px;
+    min-width: 690px;
+}
+ul.menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 6px;
+    background-color: rgb(119,119,119);
+   max-height: 75px;
+ 
+}
+ul.menuList li div a{
+    font-size: 28px;
+   
+}
+
+ul.menuList li div {
+        min-width: 200px;
+    max-height: 80px;
+  
+}
+ul.menuList li {
+    list-style-type: none;
+    size: 100%;
+    padding: 15px;
+    margin-right: 120px;
+
+}
+ul.menuList li a:hover
+{
+    border-bottom: 2px solid white;
+}
+#slider {
+    position: absolute;
+    background-color: #ffffff;
+    height: 350px;
+    width: 100%;
+    top: 220px;
+}
+#header .feedback
+{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 165px;
+    margin-top: 0px;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: dotted; 
+}
+
+#header .feedback :hover
+{   border-bottom: 2px solid black; 
+    
+    
+}
+.feedbackPopup
+{
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid black;
+    position: absolute;
+    height:500px;
+    width: 350px;
+    background-color: white;
+    margin-top: 300px;
+
+    z-index: 2; 
+    
+}
+.feedbackPopup #closeButton :hover
+{
+  color: #000000;
+}
+.feedbackPopup input 
+{
+   
+    width: 250px;
+    height: 30px;
+    border: 0.5px solid rgb(224, 218, 218);
+    box-shadow: 3px  3px 3px rgba(0,0,0,0.2);
+ 
+   
+}
+.feedbackPopup textarea 
+{
+   
+    width: 250px;
+    border: 0.5px solid rgb(224, 218, 218);
+    box-shadow: 3px  3px 3px rgba(0,0,0,0.2);
+ 
+   
+}
+.feedbackPopup button
+{
+    background-color: rgb(182, 180, 180);
+    border: 0;
+    color: rgb(247, 246, 246);
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+#feedbackButton span:hover
+{
+    text-decoration: underline;
+  
+}
+
+
+#sliderImg
+{
+    background-image: url("https://gcdnb.pbrd.co/images/3rOpnPqyMlf5.png?o=1");
+    background-size:cover;
+    height: 100%;
+     width: 100%;
+  
+     opacity: 1;
+}
+#slider button
+{
+    position: absolute;
+    height:  70px;
+    width: 40px;
+    font-size: 40px;
+    border: 0;
+    background-color:rgb(220,220,220);
+    cursor: pointer;
+}
+#slider button:hover
+{
+    background-color:rgb(176, 207, 255);
+}
+#content {
+    position:absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1080px;
+    top: 580px;
+    
+   
+  
+}
+#leftCentralText {
+    position: absolute;
+   
+    width: 28%;
+    height: 650px;
+    left: 250px;
+    top: 45px;
+  
+}
+#content .leftMenuText a
+{
+    color: rgb(155,155,155);
+    font-weight: 700;
+     font-size: 15px;
+     text-decoration: none;
+    align-items: center;
+}
+
+#rightCentralText {
+    position: absolute;
+    background-color: #ffffff;
+    width: 900px;
+
+    height: 650px;
+    top: 65px;
+   left: 515px;
+}
+#rightCentralText .gridContainer
+{
+    width: 800px ;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas:
+        "a b c "
+        "d e .";
+}
+#rightCentralText .gridContainerItem
+{
+    grid-area: a; 
+    height: 350px; width: 250px; background-color: rgb(182, 180, 180);
+    
+}
+#rightCentralText .gridContainerItem a
+{
+    text-decoration: none;
+}
+.gridContainerItem .gridContainerBigImg{
+    content: url("https://i.ibb.co/K56bQJZ/112815904-no-image-available-icon-flat-vector-illustration.jpg");
+     height:220px; 
+     width:210px;
+     padding: 10px; 
+     margin: 10px 0 0 10px;
+}
+.gridContainerItem .gridContainerSmallImg{
+    content: url("https://cdn-icons-png.flaticon.com/512/34/34627.png");
+    height:30px;
+    width:30px;
+}
+#rightCentralText .lowerNumbersFlex
+{
+    
+    margin-left: 450px; font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    margin-left: 10px;
+    column-gap: 20px;
+    margin: 20px 0 0 400px;
+}
+#rightCentralText .lowerNumbersFlex a
+{
+    color: #615B5B;
+    text-decoration: none;
+}
+#rightCentralText .lowerNumbersFlex a:hover
+{
+    color: #beb6b6;
+  
+}
+#footer {
+    position: absolute;
+    
+    bottom: 0%;
+    background-color: rgb(119,119,119);
+    width: 100%;
+    height: 150px;
+   
+}
+.sansBold1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #777777;
+}
+.sansBold2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: rgb(155,155,155);
+}
+.sansBold3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+.sansRegular1{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+.sansRegular2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #ffffff
+}
+.sansRegular3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(155,155,155);
+}
+
+.sansRegular5{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:22px;
+    color: #000000;
+}
+.sansRegularBig{
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(155,155,155);
+}
+.sansRegularBig2{
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #000000;
+ 
+}
+.sansRegularItalic2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   
+    -webkit-appearance: none;
+    margin: 0; 
+}

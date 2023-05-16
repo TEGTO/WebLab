@@ -1,0 +1,162 @@
+
+@media (max-width:1200px)
+{
+#page
+{
+right: 15%;
+}
+}
+#page
+ {
+    position: absolute;
+    height: 945px;
+    width: 100%;
+    top: 0px;
+
+ }
+body
+{
+    overflow-x: hidden;
+}
+#header {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    width: 100%;
+    top: 0;
+
+}
+ .block
+{
+    background-color: rgb(119,119,119);
+    color:white;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    height: 100px;
+ 
+}
+#header .block span
+{
+    margin-left: 10px;
+ 
+  
+}
+#header .block .innerText
+{
+  
+    margin-left: 280px;
+ 
+    font-size: 15px;
+}
+hr {
+position: absolute;
+color: inherit;
+width: 870px;
+left: 25%;
+
+}
+.headerContainer
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 25%;
+    column-gap: 20px;
+  
+}
+
+#content
+{
+    position:absolute;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    top: 150px;
+    margin-left: 25%;
+    column-gap: 3%;
+}
+#contentLeft
+{
+   
+   
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    row-gap: 200px;
+ 
+}
+#contentRight
+{
+  
+  position: absolute;
+  margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    row-gap: 20px;
+ 
+}
+#contentRight .block
+{
+    background-color: rgb(220, 220, 220);
+}
+#content .block 
+{   
+    padding: 5px;
+  
+}
+#content .block div{
+    height: 21px;
+}
+#content .block a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.contentRightInnerFlex
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 260px
+}
+.innerFlex
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  
+}
+.innerFlex .block
+{
+    width: 104px;
+    height: 110px;
+  
+}
+.contentRightText
+{
+    color: rgb(119,119,119);;
+    font-weight: 700;
+    font-size: 13px;
+}
+#footer {
+position: absolute;
+top: 790px;    
+width: 100%;
+height: 150px;
+
+}
+.footerFlex
+{  position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    column-gap: 20px;
+    width: 870px;
+}
+

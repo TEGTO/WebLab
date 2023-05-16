@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/mainPage.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.37" />
+  
+        <title>1Lab</title>
+    </head>
+    <body>
+       
+        <div id="page">
+            <div id="header">
+                <table width=70%, height=100%, align="center" style="margin-top: 10px">
+                   <tr >
+                        <td rowspan="2", width=9%, valign="middle", align="right" >
+                            <div style="background-color: rgb(155,155,155); width: 70px; height: 70px; margin-bottom: 20px;">
+                             <img src="https://gcdnb.pbrd.co/images/t9pSuSRnjmgW.png?o=1" height="70px" width="70px">
+                            </div>
+                        </td>
+                        <td valign="bottom" ><div class="sansBold2" style="width:300px "; >Назва Компанії</div></td>
+                        <td align="right", valign="bottom"><div class="sansRegularBig">+380992310086</div></td>
+                    </tr>
+                    <tr >
+                        <td width=25% valign="top" ><div class="sansRegular3" >найкраща на світі компанія</div></td>
+                        <td align="right",valign="bottom"><div class="sansRegularBig" style="padding-bottom: 0px;">+380880553535</div></td>
+                      
+                    </tr>
+                    <tr >
+                        <td></td>
+                        <td></td>
+                        <td align="right" ><div ><p  class="feedback" onclick="popupFeedbackShow()">Зворотній зв'язок</p>
+                            <div class="feedbackPopup" id="popupFeedback">
+                                <div style="margin: 5px 5px 0px 0px;" id="closeButton">
+                                    <button onclick="popupFeedbackHide()" style="height: 25px; width: 25px; background-color: rgb(179, 37, 37);  cursor: pointer;">X</button>
+                                </div>
+                              <div class="sansBold3" style="font-size: 25px; margin: 2px 75px 0 0px; color: #615B5B;">Зворотній зв'язок</div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 10px 150px 0 0px; color: #615B5B;" > Ваше ім'я <span style="color:red">*</span></div>
+                              <div style="margin: 5px 55px 0 0px;"> <input type="text" id="name" name="fname" placeholder="Jonh" type='text' ><br><br></div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 10px 150px 0 0px; color: #615B5B;" > Телефон <span style="color:red">*</span></div>
+                              <div style="margin: 5px 55px 0 0px;"> <input type="number" id="phone-number" name="fname" placeholder="12345678" type='text' ><br><br></div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 10px 160px 0 0px; color: #615B5B;" > Email <span style="color:red">*</span></div>
+                              <div style="margin: 5px 55px 0 0px;"> <input type="email" id="email" name="fname" type='text' placeholder="info@gmail.com" ><br><br></div>
+                              <div class="sansRegular3" style="font-size: 14px; margin: 0px 130px 0 0px; color: #615B5B;" > Повідомлення <span style="color:red" type='text'></span></div>
+                              <div style=" margin: 5px 55px 0 0px;">
+                                <form >
+                                    <textarea rows="4" cols="30" style="resize: none;" placeholder="Thank you. Good day!" ></textarea>
+                                    <br>
+                                    
+                                    </form>
+                              </div>
+                              
+                              <div style="margin: 20px 135px 0 0px;">
+                                <button id="feedbackButton" style="height: 35px; width: 100px; " type="button" onclick="checkTextFields()"><span>Надіслати</span> </button>
+                              </div>
+                              <div id="error" style="color: red; margin-top: 5px; margin-right: 34px; display: inline;  font-family: 'PT Sans', sans-serif;" ></div>
+                            </div>
+                        </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="menu">
+                <table width=70%, height=100%, align="center">
+                    <ul class="menuList" >
+                        <li><div class="sansRegular2"  ><a href="additionalPage2.html" style="color:#ffffff; text-decoration: none;">Головна </a></div></li> 
+                        <li><div class="sansRegular2" ><a href style="color:#ffffff; text-decoration: none; border-bottom: 2px solid white;">Каталог</a></div></li>
+                        <li><div class="sansRegular2"><a href="additionalPage1.html" style="color:#ffffff; text-decoration: none;  ">Доставка та оплата</a></div></li> 
+                        <li><div class="sansRegular2"><a href="additionalPage1.html" style="color:#ffffff; text-decoration: none;">Прайс-лист</a></div></li>
+                        <li><div class="sansRegular2"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" style="color:#ffffff; text-decoration: none;">Контакти</a></div></li>
+                    </ul>
+                </table>
+            </div>
+            <div id="slider" style="margin-top: 5px;">
+                    <div id="sliderImg">
+                    </div>
+                    <button type="button" onclick = previouslyImage(); style="top:40%; left: 20%;"> < </button>
+                    <button type="button" onclick = nextImage(); style="top:40%; left: 80%;"> ></button>
+            </div>
+            <div id="content">
+                <div class="sansRegular4 leftMenuText" style="position:absolute; left:290px; top:10px;  min-width:200px;"><a href style="text-decoration: underline; margin-right: 10px;">Головна</a>/<a href style="text-decoration: underline; margin: 0 10px 0 10px">Каталог</a>/<a href style="margin: 0 10px 0 10px">Побутова техніка</a></div>
+                <div id="leftCentralText">
+                    <div>
+                        <ul><div class="sansRegular3 leftMenuText">
+                            <li style="list-style-type: none; padding-bottom: 6px;"><a href >Автомобілі</a></li>
+                            <li style="list-style-type: none; padding-bottom: 6px;"><a href style="text-decoration: underline;" >Побутова техніка
+                                <ul type="disc" >
+                                    <li ><a href style="color: black; text-decoration: underline;">Мікрохвильові печі</a></li>
+                                    <li ><a href >Холодильники</a></li>
+                                    <li ><a href >Посудомийні машини</a></li>
+                                    <li ><a href >Чайники</a></li>
+                                </ul>
+                            </a></li>
+
+                            <li style="list-style-type: none; padding-bottom: 6px;"><a href >Мобільна техніка</a></li>
+                            <li style="list-style-type: none; padding-bottom: 6px;"><a href>Комп'ютери</a></li>
+                            <li style="list-style-type: none; padding-bottom: 6px;"><a href >Одяг</a></li>
+                            <li style="list-style-type: none; padding-bottom: 6px;"><a href >Нерухомість</a></li>
+                        </div></ul>
+                    </div>
+                    <div style="position: absolute; left:100px; top: 350px;">
+                        <img src="https://icon-library.com/images/prices-icon/prices-icon-2.jpg" height="100px" width="100px" >
+                        <div class="sansRegular3" style="color:black; font-weight: 700; font-size: 25px;">Прайс-лист</div>
+                    </div>
+                 
+                </div>
+                <div id="rightCentralText">
+                    <div class="gridContainer">
+                        <div class="gridContainerItem" style="grid-area: a;" ><a href>
+                        <img class ="gridContainerBigImg">
+                        <div class="sansRegular3" style="margin-left: 15px; font-weight: 700; color: #615B5B; font-size: 15px;">Найкрутіший чайник, який треба купити!</div>
+                       <div class="sansRegular3" style="margin: 15px 0 0 15px ; color: black; font-weight: 700; font-size: 25px;">1 599 грн</div>
+                       <div style="margin: -34px 0 40px 160px ;"><img class="gridContainerSmallImg"> </div>
+                    </a>
+                    </div>
+                    <div class="gridContainerItem" style="grid-area: b;" >
+                        <a href>
+                        <img  class ="gridContainerBigImg">
+                        <div class="sansRegular3" style="margin-left: 15px; font-weight: 700; color: #615B5B; font-size: 15px;">Найкрутіший чайник, який треба купити!</div>
+                       <div class="sansRegular3" style="margin: 15px 0 0 15px ; color: black; font-weight: 700; font-size: 25px;">1 599 грн</div>
+                       <div style="margin: -34px 0 40px 160px ;"><img class="gridContainerSmallImg"> </div>
+                    </a>
+                    </div>
+                    <div class="gridContainerItem" style="grid-area: c;" >
+                        <a href>
+                        <img  class ="gridContainerBigImg">
+                        <div class="sansRegular3" style="margin-left: 15px; font-weight: 700; color: #615B5B; font-size: 15px;">Найкрутіший чайник, який треба купити!</div>
+                       <div class="sansRegular3" style="margin: 15px 0 0 15px ; color: black; font-weight: 700; font-size: 25px;">1 599 грн</div>
+                       <div style="margin: -34px 0 40px 160px ;"><img class="gridContainerSmallImg"> </div>
+                        </a>
+                    </div>
+                    <div class="gridContainerItem" style="grid-area: d;" > <a href>
+                        <img  class ="gridContainerBigImg">
+                        <div class="sansRegular3" style="margin-left: 15px; font-weight: 700; color: #615B5B; font-size: 15px;">Найкрутіший чайник, який треба купити!</div>
+                       <div class="sansRegular3" style="margin: 15px 0 0 15px ; color: black; font-weight: 700; font-size: 25px;">1 599 грн</div>
+                       <div style="margin: -34px 0 40px 160px ;"><img class="gridContainerSmallImg"> </div>
+                    </a>
+                    </div>
+                    <div class="gridContainerItem" style="grid-area: e;" >
+                        <a href>
+                        <img  class ="gridContainerBigImg">
+                        <div class="sansRegular3" style="margin-left: 15px; font-weight: 700; color: #615B5B; font-size: 15px;">Найкрутіший чайник, який треба купити!</div>
+                       <div class="sansRegular3" style="margin: 15px 0 0 15px ; color: black; font-weight: 700; font-size: 25px;">1 599 грн</div>
+                       <div style="margin: -34px 0 40px 160px ;"><img class="gridContainerSmallImg"> </div>
+                        </a>
+                    </div>
+                      
+                    </div>
+                    <div class="lowerNumbersFlex">
+                       <div><a href>1</a></div>
+                       <div><a href>2</a></div>
+                       <div style="font-size: 25px;  "><a href style="color: black;">3</a></div>
+                       <div><a href>4</a></div>
+                       <div><a href>5</a></div>
+                       <div><a href>6</a></div>
+                       <div><a href>7</a></div>
+                    </div>
+                    
+                    <div style="margin-top: 50px;" id ="rightCentralLowerText">
+                        <hr>
+                        <div style="display: flex; flex-direction: row; column-gap: 50px;" class="sansRegular3">
+                            <div>"Найкраща компанія на світі" - це провідна компанія, яка спеціалізується на оформленні сайтів. Заснована вона була з метою допомогти підприємствам, бізнесам та індивідуальним клієнтам відобразити свої 
+                                послуги та продукти у світлій та професійній манері в Інтернеті.Компанія "Найкраща компанія на світі" має досвідчену команду фахівців, які знають, як зробити ваш сайт яскравим та привабливим для вашої цільової аудиторії. Наші дизайнери, розробники та маркетологи пильно стежать за останніми тенденціями в галузі веб-дизайну 
+                                та реклами, щоб забезпечити максимальну ефективність вашого сайту.</div>
+                            <div>Ми пропонуємо повний спектр послуг, включаючи дизайн та розробку веб-сайтів, візуальну ідентифікацію бренду, копірайтинг, SEO-оптимізацію, 
+                                рекламні кампанії та багато іншого. Наші професіонали мають багаторічний досвід у створенні сайтів на будь-яких платформах та з використанням різних технологій. Ми пропонуємо повний цикл роботи з вашим веб-проектом - 
+                                від розробки концепції до реалізації та подальшої підтримки.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+           
+            <div id="footer">
+                <table width=75% height=100% align="center">
+                    <tr>
+                        <td width=30%><div class="sansRegular3" style="color:#ffffff;">&copy; Компанія "Company Name"<br>info@name.ua</div></td>
+                        <td width=45%>
+                            <ul><div class="sansRegular3">
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="additionalPage2.html" style="color:#ffffff;">Головна</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href style="color:#ffffff;">Каталог</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="additionalPage1.html" style="color:#ffffff;">Доставка та оплата</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="additionalPage1.html" style="color:#ffffff;">Прайс-лист</a></u></li>
+                                <li style="list-style-type: none; padding-bottom: 6px;"><u><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" style="color:#ffffff;">Контакти</a></u></li>
+                            </div></ul>
+                        </td>
+                        <td width=5%>
+                            <img src="https://gcdnb.pbrd.co/images/t9pSuSRnjmgW.png?o=1" height="70px" width="70px"
+                        </td>
+                        <td  style="vertical-align: middle;"><div class="sansRegular4"><a style="color:#ffffff;"><u>Розробка сайта</u> —</a></div></div><div class="sansRegular3" style="color:#ffffff;">Пшоновський Євгеній ІПС-21</div></td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+       <script src="js/FeedbackMenu.js"></script>
+       <script src="js/sliderImgSwitch.js"></script>
+       <script src="js/scaleControl.js"></script>
+    </body>
+</html>
